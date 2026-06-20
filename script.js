@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('search-input');
   const searchButton = document.getElementById('search-button');
   const newsContainer = document.getElementById('news-container');
- 
+  
   async function fetchNews(query = 'general') {  
       try {
           const response = await fetch(`https://newsdata.io/api/1/latest?apikey=${apiKey}&q=${query}&language=en`);
